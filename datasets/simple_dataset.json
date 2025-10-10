@@ -1,0 +1,22 @@
+[
+    {
+        "input": "input",
+        "answer": "expected answer",
+        "expected_result": "pass"
+    },
+    {
+        "input": "input",
+        "answer": "expected answer",
+        "expected_result": "pass"
+    },
+    {
+        "input": "input",
+        "answer": "expected answer",
+        "expected_result": "fail"
+    },
+    {
+        "input": "input",
+        "answer": "expected answer",
+        "expected_result": "fail"
+    },
+]
