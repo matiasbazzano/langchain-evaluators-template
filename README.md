@@ -41,7 +41,7 @@ LANGCHAIN_PROJECT=langchain-workshop
 
 Run the interactive agent to test your setup:
 ```bash
-python agent.py
+python -m agents.agent
 ```
 
 You will be able to:

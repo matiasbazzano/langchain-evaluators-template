@@ -20,4 +20,5 @@ if __name__ == "__main__":
         q = input(">> ")
         if q.lower() in ["exit", "quit"]:
             break
-        run_agent(q)
+        output = run_agent(q)
+        print(f"\nAgent: {output}\n")
