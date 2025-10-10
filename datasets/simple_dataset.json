@@ -18,5 +18,5 @@
         "input": "input",
         "answer": "expected answer",
         "expected_result": "fail"
-    },
+    }
 ]

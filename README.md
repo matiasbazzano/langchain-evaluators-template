@@ -6,7 +6,7 @@ git clone https://github.com/<your-org>/taller-langchain.git
 cd taller-langchain
 ```
 
-### Step 2: Create a virtual environment (recommended)
+### Step 2: Create a virtual environment
 ```bash
 python -m venv .venv
 .venv\Scripts\activate # For Widnows
@@ -48,37 +48,3 @@ You will be able to:
 ```
 Send a simple prompt to validate the agent function or type 'exit' to quit.
 ```
-
----
-
-## 3. Running an Evaluation
-
-Run a dataset of prompts to automatically log results in **LangSmith**:
-```bash
-python eval.py
-```
-
-By default, it will use:
-```
-datasets/sample_dataset.json
-```
-
-When prompted, you can also specify another dataset path:
-
----
-
-## 4. Viewing Results in LangSmith
-
-If your environment variables are configured correctly (`LANGSMITH_TRACING=true`),  
-each interaction — both manual (`agent.py`) and automated (`eval.py`) — will appear automatically in [LangSmith](https://smith.langchain.com/).
-
-To view your results:
-1. Go to [https://smith.langchain.com](https://smith.langchain.com)
-2. Log in (or sign up if needed)
-3. Select your project (default: `taller-langchain`)
-4. Go to the **Tracing Projects** tab and explore:
-   - Inputs and outputs
-   - Chains used  
-   - Model used  
-   - Latency and token usage  
-   - Prompt and response details
