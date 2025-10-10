@@ -2,8 +2,8 @@
 
 ### Step 1: Clone this repo
 ```bash
-git clone https://github.com/<your-org>/taller-langchain.git
-cd taller-langchain
+git clone https://github.com/<your-org>/langchain-evaluators-template.git
+cd langchain-evaluators-template
 ```
 
 ### Step 2: Create a virtual environment
