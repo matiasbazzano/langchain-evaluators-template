@@ -2,7 +2,7 @@
 
 ### Step 1: Clone this repo
 ```bash
-git clone https://github.com/<your-org>/langchain-evaluators-template.git
+git clone https://github.com/matiasbazzano/langchain-evaluators-template.git
 cd langchain-evaluators-template
 ```
 
