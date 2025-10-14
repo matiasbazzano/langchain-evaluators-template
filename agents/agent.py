@@ -5,7 +5,7 @@ from utils.prompts import AGENT_PROMPT
 
 load_dotenv()
 
-# We can pass temperature here ', temperature=0'
+# We can pass temperature/verbose here ', temperature=0, verbose=True'
 model = ChatOpenAI(model=DEFAULT_MODEL)
 
 
