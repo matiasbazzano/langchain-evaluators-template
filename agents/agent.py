@@ -1,18 +1,20 @@
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
+from langchain.chains import LLMChain
 from utils.models import DEFAULT_MODEL
 from utils.prompts import AGENT_PROMPT
 
 load_dotenv()
 
-# We can pass temperature/verbose here ', temperature=0, verbose=True'
+# We can pass temperature here ', temperature=0'
 model = ChatOpenAI(model=DEFAULT_MODEL)
 
 
 def run_agent(query: str):
-    chain = AGENT_PROMPT | model
+    # We can pass verbose here ', verbose=True'
+    chain = LLMChain(prompt=AGENT_PROMPT, llm=model)
     result = chain.invoke({"input": query})
-    return result.content
+    return result["text"]
 
 
 if __name__ == "__main__":
