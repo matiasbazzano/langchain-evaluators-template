@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
-from langchain.chains import LLMChain
+from langchain_classic.chains import LLMChain
 from utils.models import DEFAULT_MODEL
 from utils.prompts import AGENT_PROMPT
 
